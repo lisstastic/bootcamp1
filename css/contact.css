@@ -1,0 +1,29 @@
+#background {
+  background-image: url(../img/contact-page.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top:0;
+  bottom: 0;
+  /*height: 100vh;*/
+  z-index: -50;
+  height: calc(100vh - 136px);
+}
+
+.contactcontainer{
+  height: calc(100vh - 136px);
+  overflow: none;
+  display: block;
+}
+.contact-form {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  width: 60%;
+  display: flex;
+  justify-content:center;
+  align-content: space-around;
+  flex-direction: row-reverse;
+  left: 150px;
+  top: 70px;
+}
+

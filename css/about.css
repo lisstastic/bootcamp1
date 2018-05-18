@@ -1,0 +1,91 @@
+#background {
+  background-image: url(../img/about.jpg);
+}
+
+#background-overlay2 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  top:0;
+  bottom: 0;
+  height: calc(100vh - 136px);
+  width: 100%;
+  z-index: -5;
+  display: block;
+  overflow: none;
+}
+
+.rows {
+	background-size: contain;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.aboutcontent {
+	position: relative;
+	z-index: -50;
+	height: 100%;
+	width: 100%;
+}
+
+.aboutsection {
+	margin-left: 350px;
+  height:100px;
+  width:200px;
+  border: 1px solid black;
+}
+
+.aboutsection:nth-child(even) {
+	margin-left: 0;
+	width:400px;
+	border:2px solid rgba(255, 255, 255, .15);
+	animation: 12s test infinite;
+}
+
+@keyframes test {
+  0% {
+    margin-left: 0px;
+    width:400px;
+    border:2px solid rgba(255, 255, 255, .15);
+  }
+  50% {
+    margin-left: -125px;
+    width: 500px;
+    border:2.8px solid rgba(255, 255, 255, 1);
+  }
+  100% {
+    margin-left: 0px;
+    width: 400px;
+    border:2px solid rgba(255, 255, 255, .15);
+  }
+}
+
+.about-text {
+	height: 350px;
+	width: 648px;
+	overflow: hidden;
+	left: 65%;
+	top: -28%;
+	transform: translate(-50%, -50%);
+	position: relative;
+	color: #fff;
+	background-color: rgba(48, 48, 57, .8);
+	box-shadow: 1px 1px 14px rgba(86, 77, 95, .7);
+	text-shadow: 1.4px 1.2px 3.1px rgba(255, 255, 255, .2);
+}
+
+.about-text p {
+	margin: 10px 35px;
+}
+
+#aboutheader {
+	font-family: 'Alegreya Sans SC';
+	font-size: 56px;
+  background-color: rgba(48, 48, 57, 1);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.about-text p {
+	font-family: 'Open Sans', sans-serif;
+}
